@@ -1,0 +1,14 @@
+# 统一文本文件行尾，保证 Windows/Mac 双向同步不出现整文件差异
+* text=auto
+
+# 批处理脚本必须保持 CRLF，否则 Windows 下双击可能执行异常
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 图片按二进制保存，不做行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
