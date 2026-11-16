@@ -1,0 +1,27 @@
+# Windows 系统与资源管理器生成的文件
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器个人配置（含本地路径，不适合共享）
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Office / WPS 临时文件
+~$*
+*.tmp
+
+# 日志
+*.log
+
+# 压缩包备份（如需要保留请删除此行）
+*.rar
+*.zip
+*.7z
+
+# Node 依赖（如以后做前端项目）
+node_modules/
