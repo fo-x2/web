@@ -4,8 +4,9 @@ ehthumbs.db
 desktop.ini
 .DS_Store
 
-# 编辑器个人配置（含本地路径，不适合共享）
-.vscode/
+# 编辑器个人配置（含本地路径，不适合共享），但保留自动拉取任务
+.vscode/*
+!.vscode/tasks.json
 .idea/
 *.swp
 *.swo
@@ -18,10 +19,10 @@ desktop.ini
 # 日志
 *.log
 
-# 压缩包备份（如需要保留请删除此行）
+# 压缩包备份
 *.rar
 *.zip
 *.7z
 
-# Node 依赖（如以后做前端项目）
+# Node 依赖
 node_modules/

@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "command": "git",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "label": "打开工作区时自动拉取最新代码",
+      "type": "shell",
+      "presentation": {
+        "panel": "shared",
+        "reveal": "never",
+        "focus": false
+      },
+      "args": [
+        "pull",
+        "--rebase",
+        "--autostash",
+        "--no-edit"
+      ]
+    }
+  ],
+  "version": "2.0.0"
+}
