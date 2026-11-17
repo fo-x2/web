@@ -1,28 +1,19 @@
 {
+  "version": "2.0.0",
   "tasks": [
     {
-      "command": "git",
-      "runOptions": {
-        "runOn": "folderOpen"
-      },
+      "label": "Start Web Server",
+      "type": "shell",
+      "command": "/usr/bin/python3",
+      "args": ["-m", "http.server", "8080", "--bind", "127.0.0.1"],
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": [],
-      "label": "打开工作区时自动拉取最新代码",
-      "type": "shell",
-      "presentation": {
-        "panel": "shared",
-        "reveal": "never",
-        "focus": false
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
       },
-      "args": [
-        "pull",
-        "--rebase",
-        "--autostash",
-        "--no-edit"
-      ]
+      "problemMatcher": []
     }
-  ],
-  "version": "2.0.0"
+  ]
 }
