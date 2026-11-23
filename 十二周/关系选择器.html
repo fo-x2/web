@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /*子带选择器*/
-       div>a {
-        color:aquamarine;
-       }
-        /*相邻兄弟*/
-        p+span {
-            text-decoration:line-through;   
-        }
-        /*普通兄弟*/
-        p~span {
-            color:azure;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+/*子元素选择器：div直接子a*/
+div>a {
+color:aquamarine;
+}
+/*相邻兄弟：p后面紧挨着第一个span*/
+p+span {
+text-decoration:line-through;
+}
+/*普通兄弟：p后面所有同级span，换成深色！！*/
+p~span {
+color:darkorange;
+}
+</style>
 </head>
 <body>
-    <div>
-        <a href="#"></a>
-        <p>
-            <a href="#"></a>
-        </p>
-        <span>靠近 p 的第一个</span>
-        <span>靠近 p 的第二个</span>
-        <span>靠近 p 的第三个</span>
-    </div>
+<div>
+<a href="#">我是div直接子a</a>
+<p>
+<a href="#">我是p里面的a</a>
+</p>
+<span>靠近 p 的第一个</span>
+<span>靠近 p 的第二个</span>
+<span>靠近 p 的第三个</span>
+</div>
 </body>
 </html>
